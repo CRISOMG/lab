@@ -1,0 +1,26 @@
+# --- Python ---
+python/venv/
+**/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# --- .NET ---
+dotnet/bin/
+dotnet/obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# --- Windows ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- IDEs ---
+.vscode/
+.vs/
+.idea/
+*.swp
+*.swo
