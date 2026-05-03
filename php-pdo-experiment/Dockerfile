@@ -5,5 +5,7 @@ RUN apt-get update && apt-get install -y \
     libpq-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# Instalamos las extensiones PDO para MySQL y PostgreSQL
-RUN docker-php-ext-install pdo pdo_mysql pdo_pgsql
+# Instalamos las extensiones PDO para MySQL y PostgreSQL, además de Xdebug
+RUN docker-php-ext-install pdo pdo_mysql pdo_pgsql \
+    && pecl install xdebug \
+    && docker-php-ext-enable xdebug
